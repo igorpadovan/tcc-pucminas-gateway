@@ -1,7 +1,8 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "poc.pucminas"
+      "packageName": "poc.pucminas",
+      "microservicePath": "..\\SegurancaComunicacao"
     },
     "jhipsterVersion": "6.10.1",
     "applicationType": "gateway",
@@ -35,6 +36,9 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "enableTranslation": false,
-    "blueprints": []
+    "blueprints": [],
+    "herokuAppName": "tcc-poc-pucminas",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }

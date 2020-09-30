@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="areaDeRisco">
+            <h2><span>Area De Risco</span> {{ areaDeRisco.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nome</span></dt>
+                <dd>
+                    <span>{{ areaDeRisco.nome }}</span>
+                </dd>
+                <dt><span>Local</span></dt>
+                <dd>
+                    <span>{{ areaDeRisco.local }}</span>
+                </dd>
+                <dt><span>Tamanho</span></dt>
+                <dd>
+                    <span>{{ areaDeRisco.tamanho }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/area-de-risco', areaDeRisco.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="localQuePodeSerAfetado">
+            <h2><span>Local Que Pode Ser Afetado</span> {{ localQuePodeSerAfetado.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nome</span></dt>
+                <dd>
+                    <span>{{ localQuePodeSerAfetado.nome }}</span>
+                </dd>
+                <dt><span>Area De Risco</span></dt>
+                <dd>
+                    <div *ngIf="localQuePodeSerAfetado.areaDeRiscoId">
+                        <a [routerLink]="['/area-de-risco', localQuePodeSerAfetado.areaDeRiscoId, 'view']">{{ localQuePodeSerAfetado.areaDeRiscoNome }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/local-que-pode-ser-afetado', localQuePodeSerAfetado.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
