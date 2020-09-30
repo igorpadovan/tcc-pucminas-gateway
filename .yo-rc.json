@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "poc.pucminas"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "gateway",
+    "baseName": "Gateway",
+    "packageName": "poc.pucminas",
+    "packageFolder": "poc/pucminas",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzdlZDQxY2FlY2M0MTI1Y2QyMTU5NDI1MjdkMDY4OGM5MDhlMzAxNGE3M2Y5NGJkNmQzZTNkNjE5ODdmOGY1ZmU2NzZhNzI1MDM5OWFiOTlmY2QzYmUxOTZlNGYxOGJjNjE3YWEwMzYzNmZlZjRjYzBmZDEwZTZmMjU3ZGQ0ZGI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1601429497151,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
